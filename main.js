@@ -31,7 +31,7 @@ rollButton.addEventListener('click' , function(){
 allRollbutton.addEventListener('click' , function(){
     let counter = 0
     console.log(dieRolls.length)
-    allRolldisplay.innerHTML += '<ul class=\'newSet' + allRollAmnt.toString() + '\'>Recorded Set (sides:' + userSides.value + '):' + (allRollAmnt + 1).toString() + '</ul>'
+    allRolldisplay.innerHTML += '<ul class=\'newSet' + allRollAmnt.toString() + '\'>Recorded Set ' + (allRollAmnt + 1).toString() + '(sides:' + userSides.value + '): </ul>'
     while ( counter < dieRolls.length){
         let rollList = document.querySelector('.newSet' + allRollAmnt.toString())
         rollList.innerHTML += "<li>" + dieRolls[counter] + "</li>"
