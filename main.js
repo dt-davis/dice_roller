@@ -1,8 +1,9 @@
-const rollButton = document.querySelector('.roll!Button')
+const rollButton = document.querySelector('.rollButton')
 const userRollamount = document.querySelector('.userRolls')
 const total = document.querySelector('.total')
 const allRollbutton = document.querySelector('.showAllrolls')
 const allRolldisplay = document.querySelector('.allRolls')
+const restButton = document.querySelector('.restButton')
 let dieRolls = []
 let dieTotal = 0
 let rollAmount = 0
@@ -22,7 +23,7 @@ rollButton.addEventListener('click' , function(){
     }
     
     console.log(dieRolls)
-    total.innerHTML = dieTotal
+    total.innerHTML = 'Total of Rolls:' + dieTotal
 })
 
 allRollbutton.addEventListener('click' , function(){
@@ -39,4 +40,11 @@ allRollbutton.addEventListener('click' , function(){
     console.log(allRolldisplay)
 })
 
+restButton.addEventListener('click' , function(){
+    allRolldisplay.innerHTML = ''
+    dieRolls = []
+    allRollAmnt = 0
+    total.innerHTML = 'Total of Rolls:--'
+    userRollamount.value = ''
+})
 console.log(dieRolls)
