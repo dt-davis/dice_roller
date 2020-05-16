@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
     <link rel="stylesheet" href='stle.css'>
 </head>
+
 <body>
-    <label for="howMany">How many Sides:</label>
-    <input type="text" class="howMany">
-    <label for="userRolls">How many rolls?</label>
-    <input type="text"  class="userRolls">
-    <button class="rollButton">Roll!</button>
-    <button class="restButton">Rest</button>
-    <div class="total">Total of Rolls: --</div>
-    <button class="showAllrolls"> Show All Rolls</button>
-    <div class="allRolls"></div>
+    <div class="useInteraction">
+        <button class="rollButton">Roll!</button>
+        <div class="useInput">
+            <label for="howMany"># of Sides</label>
+            <input type="text" class="howMany">
+            <label for="userRolls">Rolls?</label>
+            <input type="text" class="userRolls">
+            <div class="total">Total of Rolls: --</div>
+        </div>
+    </div>
+    <main>
+        <div class="displayLeft mainPanels">
+            <div class="leftPanels">
+
+            </div>
+        </div>
+        <div class='displayAction mainPanels'>
+            <div class="action_window"></div>
+            <div class="useEvents">
+                <button class="showAllrolls"> Record Rolls</button>
+                <button class="restButton">Rest</button>
+            </div>
+        </div>
+        <div class="displayRight mainPanels">
+            <div class="rightPanels">
+            </div>
+        </div>
+    </main>
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="main.js"></script>
 </body>
+
 </html>

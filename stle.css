@@ -1,0 +1,37 @@
+input {
+    width: 35px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.useInteraction {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rollButton {
+    width: 125px;
+    height: 125px;
+
+}
+
+main {
+    display: flex;
+}
+
+.mainPanels{
+    flex-basis: 30%;
+}
+
+.action_window{
+    height:275px;
+    border: 2px solid black;
+
+}
