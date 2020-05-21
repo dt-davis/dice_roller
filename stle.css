@@ -8,12 +8,13 @@ body{
 }
 
 .useInteraction {
-    width: 500px;
+    width: 279px;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
 }
 
 .rollButton {
@@ -32,6 +33,19 @@ main {
 
 .action_window{
     height:275px;
+    width: 275px;
     border: 2px solid black;
 
+}
+
+.rollPane{
+    height: 150px;
+    width: 275px;
+    border: 2px solid black;
+    box-shadow: -5px 5px grey;
+}
+
+li {
+    height: 18px;
+    width: 140px;
 }
